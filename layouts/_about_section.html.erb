@@ -1,29 +1,18 @@
 <section id="about" class="feature">
-    <div class="row"
-         data-bottom="transform:translateY(-5em)" data--100-bottom="transform:translateY(0)">
-        <div class="large-12 columns social">
-            <a rel="nofollow" href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank" title="Like us on FaceBook" onclick="ga('send', 'event', 'social', 'like')"><i class="icon-like"></i></a>
-            <a rel="nofollow" href="https://www.facebook.com/groups/chennaigeeks/" target="_blank"><i class="icon-facebook-2" title="FaceBook discussion group" onclick="ga('send', 'event', 'social', 'facebook')"></i></a>
-            <a rel="nofollow" href="https://twitter.com/intent/tweet?url=twchennai.github.io/geeknight&text=Whats+up&hashtags=geeknightchennai" target="_blank" title="Tweet hashtag #geeknightchennai" onclick="ga('send', 'event', 'social', 'twitter')"><i class="icon-twitter-2"></i></a>
-            <a rel="nofollow" href="mailto:geeknight.chennai@thoughtworks.com" title="Email us" onclick="ga('send', 'event', 'social', 'email')"><i class="icon-mail"></i></a>
-            <!-- NOTE: Last video link is line-wrapping in small screens like iOS a rel="nofollow" href="#" title="Videos (coming soon)"><i class="icon-youtube"></i></a -->
-        </div>
+  <div class="row"
+       data-bottom="transform:translateY(-5em)" data--100-bottom="transform:translateY(0)">
+    <div class="large-12 columns social">
+      <a rel="nofollow" href="https://www.facebook.com/GeeknightChennai?viewer_id=100006569229519" target="_blank" title="Like us on FaceBook" onclick="ga('send', 'event', 'social', 'like')"><i class="icon-like"></i></a>
+      <a rel="nofollow" href="https://www.facebook.com/groups/chennaigeeks/" target="_blank"><i class="icon-facebook-2" title="FaceBook discussion group" onclick="ga('send', 'event', 'social', 'facebook')"></i></a>
+      <a rel="nofollow" href="https://twitter.com/intent/tweet?url=twchennai.github.io/geeknight&text=Whats+up&hashtags=geeknightchennai" target="_blank" title="Tweet hashtag #geeknightchennai" onclick="ga('send', 'event', 'social', 'twitter')"><i class="icon-twitter-2"></i></a>
+      <a rel="nofollow" href="mailto: converge-chennai@thoughtworks.com" title="Email us" onclick="ga('send', 'event', 'social', 'email')"><i class="icon-mail"></i></a>
+      <!-- NOTE: Last video link is line-wrapping in small screens like iOS a rel="nofollow" href="#" title="Videos (coming soon)"><i class="icon-youtube"></i></a -->
     </div>
+  </div>
 
-    <div class="row">
-        <div class="large-12 columns" data-anchor-target="#_about">
-            <h4>Digital Strategy & Next Gen Customer Experience</h4>
-            <p data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)">Converge aims to bring together ideators, designers, business analysts, solution providers, technologists, product managers and project and program managers to connect, collaborate and learn from each other.</p>
-
-            <p data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)">The theme for this edition of Converge is <strong>“Digital Strategy & Next Gen Customer Experience"</strong>.</p>
-
-            <p id="_about" data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)">Customer experience has been going through a major shift for quite sometime. Given the number of channels the customer can interact with, the demography using those channels, the advances in microelectronics and information technology; customer experience as a whole needs to be rethought and continuously enriched.</p>
-
-            <p id="_about" data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)">Digital strategy at a very high level is about creating the right experiences to match customer needs and continuous customer engagement. Current businesses have digital strategy as a separate stream to manage their digital growth.</p>
-
-            <p id="_about" data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)">Register now to attend the event. As an attendee, you will get to connect with like minded peers and gain insight from industry practitioners. </p>
-
-            <p id="_about" data--100-bottom-top="transform:perspective(400px) rotateX(90deg) scale(.5);transform-origin:50% 0" data--100-bottom="transform:perspective(400px) rotateX(0deg) scale(1)">Food and refreshments will be provided. Attendance is free of charge. If you have any questions write to us at <em>converge-chennai@thoughtworks.com</em>.</p>
-        </div>
+  <div class="row">
+    <div class="large-12 columns" data-anchor-target="#_about">
+      <%= @item[:about] %>
     </div>
+  </div>
 </section>
