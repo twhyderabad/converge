@@ -1,26 +1,20 @@
-<section id="speaker" class="feature">
+<section id="speakers" class="feature">
   <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
     <h2>Speakers</h2>
   </div>
   <div class="row">
-    <div class="timings">
-      <% @item[:speaker] && @item[:speaker].each_with_index do |speaker, i| %>
+    <% [:left, :right].each do |align| %>
+      <div class="large-5 large-1-offset columns">
+        <% @item[:speaker][align] && @item[:speaker][align].each_with_index do |speaker, i| %>
           <div class="row">
-            <div class="col-md-6" data-anchor-target="#speaker-<%= i %>"
-                 data-bottom="transform:rotateX(90deg) scale(0);opacity:0"
-                 data--200-bottom="transform:rotateX(0) scale(1);opacity:1">
-              <p><%= speaker[:name] %></p>
-              <% if speaker[:designation] %>
-                  <p>
-                    <small><%= speaker[:designation] %></small>
-                  </p>
-              <% end %>
-              <p><%= speaker[:description] %></p>
-            </div>
+            <div class="speaker-name"><%= speaker[:name] %></div>
+            <% if speaker[:designation] %>
+              <div class="speaker-designation"><%= speaker[:designation] %></div>
+            <% end %> 
+            <p class="speaker-description"><%= speaker[:description] %></p>
           </div>
-      <% end %>
-    </div>
+        <% end %>
+      </div>
+    <% end %> 
   </div>
 </section>
-
-

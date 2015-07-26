@@ -1,6 +1,4 @@
-# Geek Night Chennai
-
-an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development
+# Converge Chennai
 
 # Development
 
@@ -24,7 +22,7 @@ For ease, there is a Guardfile. You can run `bundle exec guard`, it will keep wa
 * `generator/assets` - contains all assets
 * `generator/assets/app.sass` - contains the main stylesheet
 * `generator/assets/img/speakers` - contains speaker images
-* `generator/content` - content for each geek night
+* `generator/content` - content for each converge
 * `generator/layouts` - layouts for default and archive versions
 * `generator/Rules` - routing rules
 

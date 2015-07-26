@@ -75,6 +75,8 @@
   $alt-fg: $orange
   +override-colors($main-fg,$main-bg,$alt-fg)
   border-radius: 0
+  background: url('../img/banner.jpg')
+  background-size: cover
 
   @media #{$small}
     margin-top: $topbar-height
@@ -90,27 +92,39 @@
         height: 2em
         +animate(bounceInLeft, 1s, 0s)
 
-    h1
-      +animate(bounceInRight, 1s, 0s)
+    #intro-desc
+      background-color: rgba(0, 0, 0, 0.8)
+  
+      h1
+        +animate(bounceInRight, 1s, 0s)
+        color: #fff
 
-    h6
-      +animate(flipInX, 1s, .5s)
+      h5
+        color: #fff
 
-    .subheader
-      $subheader-color: darken($alt-fg, 0%)
-      color: $subheader-color
-      margin: 1em 0 0 0
-      +animate(flipInX, 1s, .5s)
+      h6
+        +animate(flipInX, 1s, .5s)
+        color: #fff
 
-    .subnote
-      line-height: 1.5
-      display: block
-      font-size: .6em
-      +animate(flipInX, 1s, .5s)
+      .subheader
+        $subheader-color: darken($alt-fg, 0%)
+        color: $subheader-color
+        margin: 1em 0 0 0
+        +animate(flipInX, 1s, .5s)
+
+      .subnote
+        line-height: 1.5
+        display: block
+        font-size: .6em
+        +animate(flipInX, 1s, .5s)
 
   .countdown
+    background-color: rgba(0, 0, 0, 0.8)
+
     h4
       color: $alt-fg
+    p
+      color: #fff
 
     .date
       p
@@ -118,7 +132,7 @@
 
       h4
         +animate(fadeInUp, 1s, 1s)
-        border-top: 1px dashed $main-fg
+        border-top: 1px dashed #fff
 
     .counter
       p
@@ -126,7 +140,7 @@
 
       h4
         +animate(fadeInDown, 1s, 1s)
-        border-bottom: 1px dashed $main-fg
+        border-bottom: 1px dashed #fff
 
         &#seconds
           overflow: hidden
@@ -184,7 +198,7 @@
         padding: .5em
 
     h6.delimiter
-      color: lighten($main-fg, 50%)
+      color: #fff
       line-height: 2.5
 
 //
@@ -254,6 +268,23 @@
 
       &:hover
         background-color: lighten($main-bg, 10%)
+
+//
+// SPEAKERS SECTION
+//
+#speakers
+  padding: .5em
+  .speaker-name
+    text-align: left
+    font-weight: 400
+  .speaker-designation
+    text-align: left
+    font-size: .5em
+    font-style: italic
+    margin-top: .2em
+  .speaker-description
+    text-align: left
+    margin-top: .4em
 
 //
 // LOCATION SECTION

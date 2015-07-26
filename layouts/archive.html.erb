@@ -1,7 +1,7 @@
 <% render '_layout', title: start_date.strftime("%b %Y") do %>
     <section id="intro" class="feature">
         <div class="row logo">
-            <div class="large-12 columns">
+            <div id="intro-desc" lass="large-12 columns">
                 <a href="http://www.thoughtworks.com" target="_blank"
                    onclick="ga('send', 'event', 'tw', 'tw')">
                     <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
@@ -19,13 +19,13 @@
         </div>
     </section>
 
-    <%= render '_agenda_section' %>
-
     <%= render '_about_section' %>
 
-    <%= render '_archive_section' %>
+    <%= render '_agenda_section' %>
 
-    <%= render '_header_section' %>
+    <%= render '_speaker_section' %>
+
+    <%= render '_archive_section' %>
 
     <%= render '_footer_section' %>
 <% end %>
