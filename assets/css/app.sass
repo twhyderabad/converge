@@ -293,7 +293,7 @@
   $main-fg: $white
   $main-bg: $dark
   +override-colors($main-fg,$main-bg,$main-fg)
-  background-image: url(../img/dark-bg.jpg)
+  background-color: #000
 
   .row
     overflow: hidden
@@ -319,7 +319,7 @@
   $main-bg: $dark
   $alt-fg: $orange
   +override-colors($main-fg,$main-bg,$alt-fg)
-  background-image: url(../img/dark-bg.jpg)
+  background-color: #000
 
   .social
     a
@@ -449,3 +449,12 @@
       line-height: 1em
       a
         color: $alt-fg
+
+//
+// FORM SECTION
+//
+#form
+  margin-top: 1em
+
+  form.mktoForm
+    margin: 0 auto
