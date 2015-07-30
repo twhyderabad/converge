@@ -60,22 +60,6 @@
                     </a>
                 <% end %>
             </div>
-            <div class="large-2 columns participate-or-talk">
-                <hr class="show-for-small" />
-                <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
-            </div>
-            <div class="large-5 columns talk">
-                <% if item[:talk] %>
-                    <a href="<%= @item[:talk] %>" target="_blank" rel="nofollow"
-                       onclick="ga('send', 'event', 'talk', 'talk')">
-                        <h4>Present</h4>
-                    </a>
-                <% else %>
-                    <a href="javascript:void(0)">
-                        <h4><strike>Present</strike></h4>
-                    </a>
-                <% end %>
-            </div>
         </div>
     </section>
 
