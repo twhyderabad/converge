@@ -1,6 +1,7 @@
 # common
 *.bak
 *.orig
+.ruby-gemset
 
 # sublime
 *.sublime-workspace
