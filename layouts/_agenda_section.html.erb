@@ -2,6 +2,9 @@
     <div class="row" data-bottom="transform:translateY(-10em)" data--100-bottom="transform:translateY(0em)">
         <h2>Agenda</h2>
     </div>
+    <% if @item[:agenda].nil? %>
+        <div style="text-align: center;">Please check back after 22nd Feb.</div>
+    <% end %>
 
     <div class="timings">
         <% @item[:agenda] && @item[:agenda].each_with_index do |agenda, i| %>
