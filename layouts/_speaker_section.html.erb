@@ -10,7 +10,15 @@
             <% if speaker[:speaker_image] %>
               <div class="speaker-image"><img src="./img/speaker/<%=speaker[:speaker_image]%>" title=<%=speaker[:name]%> alt=<%=speaker[:name]%> width=100% height="auto"></div>
             <% end%>
-            <div class="speaker-name"><%= speaker[:name] %></div>
+            <div class="speaker-name">
+              <% if speaker[:link] %>
+                <a href="<%=speaker[:link]%>">
+                  <%= speaker[:name] %>
+                </a>
+              <% else %>
+                <%= speaker[:name] %>
+              <% end %>
+            </div>
             <% if speaker[:designation] %>
               <div class="speaker-designation"><%= speaker[:designation] %></div>
             <% end %> 
