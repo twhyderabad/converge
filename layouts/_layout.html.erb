@@ -21,8 +21,19 @@
     <![endif] -->
 
     <script src="js/custom.modernizr.js"></script>
+
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=15256248715";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!--[if lte IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" rel="nofollow">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -35,7 +46,7 @@
       _gaq.push(['_setAccount', 'UA-65698029-1']);
       _gaq.push(['_trackPageview']);
       (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 
