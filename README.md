@@ -1,4 +1,4 @@
-# Converge Chennai
+# Converge Hyderabad
 
 **NOTE:** GitHub's "create/edit file" buttons are very small and hard to find, but they are there (as long as you're logged in and have push rights to this repo).
 
