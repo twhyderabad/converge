@@ -3710,7 +3710,8 @@ button, .button {
   #intro .countdown {
     background-color: rgba(0, 0, 0, 0.8); }
     #intro .countdown h4 {
-      color: #f06819; }
+      color: #f06819;
+      text-transform: capitalize; }
     #intro .countdown p {
       color: white; }
     #intro .countdown .date p {
@@ -3913,21 +3914,21 @@ button, .button {
     text-align: left;
     font-size: 0.5em;
     font-style: italic;
-    margin-top: 0.2em;
+    margin-top: 1em;
     margin-left: 65px; }
   #speakers .speaker-description {
     text-align: left;
     margin-top: 0.4em; }
   #speakers .speaker-image {
-    height: 50px;
-    width: 50px;
+    padding: 0 10px 10px 0;
+    height: 150px;
+    width: 150px;
     position: relative;
     display: inline-block;
     float: left; }
     #speakers .speaker-image img {
-      border-radius: 50px;
-      height: 50px;
-      width: 50px; }
+      height: 150px;
+      width: 150px; }
 
 #location {
   color: white;
